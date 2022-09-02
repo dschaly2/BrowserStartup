@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patrish Start</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="Images/patrish.png">
+<style>
+@font-face { 
+  font-family: ThinLine;
+  src: url(Thin_Line_Font.otf);
+}
+@keyframes heading {
+0% { font-size: 4em; }
+50% { font-size: 5.8em; }
+100% { font-size: 4em; }
+}
+
+@keyframes links {
+to { background-color: #ffffff; color: #000000; }
+}
+
+* { letter-spacing: 1px;}
+
+body { background-color: #2a363b;
+       margin-left: 475px;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto; }
+.flex-container { display: flex;
+                  flex-wrap: wrap;
+                  background-color: #2a363b;
+		  width: 550px;
+		  margin-left: auto;
+		  margin-right: auto;
+		  padding-left: 0px; }
+		  
+.flex-container a  { background-color: #99b398; 
+                      margin: 10px;
+		      padding: 20px;
+		      font-size: 35px;
+		      width: 200px;
+		      text-align: center;
+		      font-family: ThinLine;
+		      border: 1px solid #ffffff; }
+		       
+.flex-container a  { text-decoration: none; 
+                        color: #ffffff; 
+			font-weight: bold; }
+.flex-container a:hover { animation: links;
+                            animation-duration: 0.5s;
+			    animation-iteration-count:infinite;
+			    animation-direction: alternate; }
+@keyframes meme {
+from { background-image: none; }
+to { background-image: url(../Images/bkftlettuce.jpeg); }
+}
+footer { clear: both;
+         background-color: #2a363b;
+	 height: 300px;
+	 width: 700px;
+	 background-position: bottom; ; 
+	 }
+footer:hover { animation: meme;
+               animation-duration: 5s;
+	       animation-iteration-count: infinite; }
+p { color: #ffffff; 
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 5px 5px 10px #ffffff;
+    animation: heading;
+    animation-duration: 5s;
+    font-family: ThinLine;
+    height: auto;
+    padding-bottom: 0; }
+#center { margin-left: 138px;  } /* in case of only one link in a row use this to center it */
+a { display: block;
+    width: 200px;
+    height: auto; }
+hr { color: #ffffff;
+     width: 80%; }
+</style>
+
+
+</head>
+<body>
+<p>Welcome SpaceMan</p>
+<hr>
+<br>
+<div class="flex-container">
+  <a href="https://duckduckgo.com" target="_blank"><div>DuckDuckGo</div></a>
+  <a href="https://youtube.com" target="_blank"><div>YouTube</div></a>
+  <a href="https://bw.instructure.com" target="_blank"><div>Canvas</div></a>
+  <a href="https://outlook.office365.com/mail/" target="_blank"><div>Inbox</div></a>
+  <a href="https://google.com" target="_blank"><div>Google</div></a>
+  <a href="https://www.amazon.com/" target="_blank">Amazon</a>
+  <a href="https://github.com/dschaly2" target="_blank"><div>GitHub</div></a>
+  <a href="https://rutracker.org/forum/index.php" target="_blank"><div>RuTracker</div></a>
+  <a href="https://discordapp.com/channels/@me" target="_blank"><div>Discord</div></a>
+  <a href="https://twitch.tv" target="_blank"><div>Twitch</div></a>
+  <a href="https://rateyourmusic.com/" target="_blank" id="center"><div>RYM</div></a>
+</div>
+<br><br><br>
+<footer>
+</footer>
+</body>
+</html>
